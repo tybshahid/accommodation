@@ -30,6 +30,12 @@
     margin-left: 1rem;
 }
 
+@media only screen and (max-width: 850px) {
+    .Accommodation-details-wrapper {
+        flex-direction: column;
+    }
+}
+
 .Accommodation-details {
     flex-grow: 1;
     padding: 1rem;
