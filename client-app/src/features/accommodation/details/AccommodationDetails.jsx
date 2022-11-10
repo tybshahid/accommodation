@@ -1,6 +1,7 @@
 import { useEffect } from "react"
 import './AccommodationDetails.css'
 import data from "./AccommodationDetails.props"
+import StarRatings from 'react-star-ratings'
 
 const AccommodationDetails = () => {
     useEffect(() => {
@@ -14,7 +15,7 @@ const AccommodationDetails = () => {
 
     return (
         <div className="Accommodations">
-            {data.data.results.map((item, index) => (
+            {data.data?.results?.map((item, index) => (
                 <div key={item.id} className="Accommodation">
                     <div className="Accommodation-image">
                         <div className="Accommodation-image-tag">{item?.offer?.promotion?.title}</div>
@@ -22,7 +23,25 @@ const AccommodationDetails = () => {
                     </div>
                     <div className="Accommodation-details-wrapper">
                         <div className="Accommodation-details">
-                            <h3>{item.property?.title}</h3>
+                            <div className="Accommodation-details-title">
+                                <h3>{item.property?.title}</h3>
+                                {item.property?.rating?.ratingValue && <div className="Accommodation-details-title-icons">
+                                    {item.property.rating.ratingType === "star" && <StarRatings
+                                        rating={item.property.rating.ratingValue}
+                                        starDimension="16px"
+                                        starSpacing="2px"
+                                        starRatedColor="rgb(251, 203, 59)"
+                                    />}
+                                    {item.property.rating.ratingType === "self" && <StarRatings
+                                        rating={item.property.rating.ratingValue}
+                                        starDimension="16px"
+                                        starSpacing="2px"
+                                        starRatedColor="rgb(251, 203, 59)"
+                                        svgIconPath="M12,3a9,9,0,1,0,9,9A9,9,0,0,0,12,3Z"
+                                        svgIconViewBox="0 0 24 24"
+                                    />}
+                                </div>}
+                            </div>
                             <div>
                                 {item.property?.address && Array.isArray(item.property?.address) ?
                                     <span>{item.property.address.join(", ")}</span> : null}

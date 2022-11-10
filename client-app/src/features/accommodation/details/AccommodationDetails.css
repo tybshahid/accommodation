@@ -43,8 +43,24 @@
     flex-direction: column;
 }
 
-div.Accommodation-details>h3 {
+.Accommodation-details-title {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.Accommodation-details-title-icons {
+    display: flex;
+    align-items: center;
+}
+
+div.Accommodation-details h3 {
     margin: 0;
+    display: inline-block;
+    max-width: 50%;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
 }
 
 div.Accommodation-details span {
