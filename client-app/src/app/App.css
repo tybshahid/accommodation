@@ -1,8 +1,35 @@
 .App {
     display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.App-header {
+    padding: 2em 1em;
+}
+
+.App-logo {
+    pointer-events: none;
+    width: 40vmin;
+}
+
+.App-features {
+    position: relative;
+    flex-grow: 1;
+    overflow-y: auto;
+    box-sizing: border-box;
+
+    display: flex;
     padding: 1em;
     place-content: center;
+    align-items: center;
     background-color: lightgray;
     font-weight: 500;
     font-size: 2em;
+}
+
+.App-features::-webkit-scrollbar {
+    display: none;
 }
