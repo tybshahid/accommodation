@@ -1,5 +1,6 @@
 import './App.css'
 import logo from '../logo.png'
+import AccommodationDetails from '../features/accommodation/details/AccommodationDetails'
 
 const App = () => {
     return (
@@ -7,9 +8,7 @@ const App = () => {
             <header className="App-header">
                 <img src={logo} className="App-logo" alt="logo" />
             </header>
-            <div className="App-features">
-                Features go here
-            </div>
+            <AccommodationDetails />
         </div>
     )
 }
