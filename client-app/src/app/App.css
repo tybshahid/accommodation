@@ -4,10 +4,12 @@
     box-sizing: border-box;
     height: 100vh;
     overflow: hidden;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .App-header {
-    padding: 2em 1em;
+    padding: 2rem 1rem;
 }
 
 .App-logo {
@@ -19,15 +21,7 @@
     position: relative;
     flex-grow: 1;
     overflow-y: auto;
-    box-sizing: border-box;
-
-    display: flex;
-    padding: 1em;
-    place-content: center;
-    align-items: center;
-    background-color: lightgray;
-    font-weight: 500;
-    font-size: 2em;
+    padding: 2rem 1rem;
 }
 
 .App-features::-webkit-scrollbar {
