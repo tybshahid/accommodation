@@ -46,7 +46,13 @@
 .Accommodation-details-title {
     display: flex;
     gap: 1rem;
-    align-items: center;
+}
+
+@media only screen and (max-width: 850px) {
+    .Accommodation-details-title {
+        flex-direction: column;
+        gap: 0;
+    }
 }
 
 .Accommodation-details-title-icons {
@@ -61,6 +67,12 @@ div.Accommodation-details h3 {
     white-space: nowrap;
     overflow: hidden !important;
     text-overflow: ellipsis;
+}
+
+@media only screen and (max-width: 850px) {
+    div.Accommodation-details h3 {
+        max-width: 100px;
+    }
 }
 
 div.Accommodation-details span {
