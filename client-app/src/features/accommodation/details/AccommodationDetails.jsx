@@ -20,27 +20,29 @@ const AccommodationDetails = () => {
                         <div className="Accommodation-image-tag">{item?.offer?.promotion?.title}</div>
                         <img src={`${item?.property?.previewImage?.url}&temp=${item.id}`} alt="previewImage" />
                     </div>
-                    <div className="Accommodation-details">
-                        <h3>{item.property?.title}</h3>
-                        <div>
-                            {item.property?.address && Array.isArray(item.property?.address) ?
-                                <span>{item.property.address.join(", ")}</span> : null}
+                    <div className="Accommodation-details-wrapper">
+                        <div className="Accommodation-details">
+                            <h3>{item.property?.title}</h3>
+                            <div>
+                                {item.property?.address && Array.isArray(item.property?.address) ?
+                                    <span>{item.property.address.join(", ")}</span> : null}
+                            </div>
+                            <div className="Accommodation-details-offer">{item.offer?.name}</div>
+                            <div className="Accommodation-details-cancellation">
+                                {cancellationOptions[item.offer?.cancellationOption?.cancellationType]}
+                            </div>
                         </div>
-                        <div className="Accommodation-details-offer">{item.offer?.name}</div>
-                        <div className="Accommodation-details-cancellation">
-                            {cancellationOptions[item.offer?.cancellationOption?.cancellationType]}
+                        <div className="Accommodation-price">
+                            <span style={{ fontSize: "small", marginTop: "auto" }}>
+                                <b>1</b> night total ({item.offer?.displayPrice?.currency})
+                            </span>
+                            <div style={{ fontSize: "xx-large" }}>
+                                <sup style={{ fontSize: "large" }}>$</sup>{item.offer?.displayPrice?.amount}
+                            </div>
+                            {item.offer?.savings && <h3 style={{ color: "red", margin: 0 }}>
+                                {`Save $${item.offer.savings.amount}`}<sup>~</sup>
+                            </h3>}
                         </div>
-                    </div>
-                    <div className="Accommodation-price">
-                        <span style={{ fontSize: "small", marginTop: "auto" }}>
-                            <b>1</b> night total ({item.offer?.displayPrice?.currency})
-                        </span>
-                        <div style={{ fontSize: "xx-large" }}>
-                            <sup style={{ fontSize: "large" }}>$</sup>{item.offer?.displayPrice?.amount}
-                        </div>
-                        {item.offer?.savings && <h3 style={{ color: "red", margin: 0 }}>
-                            {`Save $${item.offer.savings.amount}`}<sup>~</sup>
-                        </h3>}
                     </div>
                 </div>
             ))
