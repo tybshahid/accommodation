@@ -10,6 +10,7 @@
 
 .Accommodation-image {
     display: flex;
+    width: 200px;
 }
 
 .Accommodation-image-tag {
