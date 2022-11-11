@@ -3,6 +3,10 @@ import StarRatings from 'react-star-ratings'
 
 const AccommodationDetails = (props) => {
 
+    const {
+        excludeRatings = false
+    } = props
+
     const cancellationOptions = Object.freeze({
         FREE_CANCELLATION: "Free cancellation",
         NOT_REFUNDABLE: "Not refundable"
@@ -20,7 +24,7 @@ const AccommodationDetails = (props) => {
                         <div className="Accommodation-details">
                             <div className="Accommodation-details-title">
                                 <h3>{item.property?.title}</h3>
-                                {item.property?.rating?.ratingValue && <div className="Accommodation-details-title-icons">
+                                {!excludeRatings && item.property?.rating?.ratingValue && <div className="Accommodation-details-title-icons">
                                     {item.property.rating.ratingType === "star" && <StarRatings
                                         rating={item.property.rating.ratingValue}
                                         starDimension="16px"

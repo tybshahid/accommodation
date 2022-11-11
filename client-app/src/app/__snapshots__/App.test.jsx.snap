@@ -1,0 +1,524 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should render without throwing an error 1`] = `
+<div
+  className="App"
+>
+  <header
+    className="App-header"
+  >
+    <img
+      alt="logo"
+      className="App-logo"
+      src="logo.png"
+    />
+  </header>
+  <div
+    className="App-features"
+  >
+    <div
+      className="App-filters"
+    >
+      <div>
+        <b>
+          5
+        </b>
+         
+        <span
+          style={
+            Object {
+              "fontStyle": "italic",
+            }
+          }
+        >
+          hotels in 
+          <b>
+            Sydney
+          </b>
+        </span>
+      </div>
+      <div>
+        <span
+          style={
+            Object {
+              "fontWeight": "bold",
+            }
+          }
+        >
+          Sort by
+        </span>
+          
+        <select
+          onChange={[Function]}
+          style={
+            Object {
+              "padding": "0 0.5rem",
+            }
+          }
+        >
+          <option
+            value="high-low"
+          >
+            Price (high-low)
+          </option>
+          <option
+            value="low-high"
+          >
+            Price (low-high)
+          </option>
+        </select>
+      </div>
+    </div>
+    <div
+      className="Accommodations"
+    >
+      <div
+        className="Accommodation"
+      >
+        <div
+          className="Accommodation-image"
+        >
+          <div
+            className="Accommodation-image-tag"
+          >
+            Exclusive Deal
+          </div>
+          <img
+            alt="previewImage"
+            src="https://unsplash.it/145/125/?random&temp=cxd650nuyo"
+          />
+        </div>
+        <div
+          className="Accommodation-details-wrapper"
+        >
+          <div
+            className="Accommodation-details"
+          >
+            <div
+              className="Accommodation-details-title"
+            >
+              <h3>
+                Courtyard by Marriott Sydney-North Ryde
+              </h3>
+            </div>
+            <div>
+              <span>
+                7-11 Talavera Rd, North Ryde
+              </span>
+            </div>
+            <div
+              className="Accommodation-details-offer"
+            >
+              Deluxe Balcony Room
+            </div>
+            <div
+              className="Accommodation-details-cancellation"
+            >
+              Not refundable
+            </div>
+          </div>
+          <div
+            className="Accommodation-price"
+          >
+            <span
+              style={
+                Object {
+                  "fontSize": "small",
+                  "marginTop": "auto",
+                }
+              }
+            >
+              <b>
+                1
+              </b>
+               night total (
+              AUD
+              )
+            </span>
+            <div
+              style={
+                Object {
+                  "fontSize": "xx-large",
+                }
+              }
+            >
+              <sup
+                style={
+                  Object {
+                    "fontSize": "large",
+                  }
+                }
+              >
+                $
+              </sup>
+              329
+            </div>
+            <h3
+              style={
+                Object {
+                  "color": "red",
+                  "margin": 0,
+                }
+              }
+            >
+              Save $30
+              <sup>
+                ~
+              </sup>
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div
+        className="Accommodation"
+      >
+        <div
+          className="Accommodation-image"
+        >
+          <div
+            className="Accommodation-image-tag"
+          >
+            Exclusive Deal
+          </div>
+          <img
+            alt="previewImage"
+            src="https://unsplash.it/145/125/?random&temp=mesq6mggyn"
+          />
+        </div>
+        <div
+          className="Accommodation-details-wrapper"
+        >
+          <div
+            className="Accommodation-details"
+          >
+            <div
+              className="Accommodation-details-title"
+            >
+              <h3>
+                Primus Hotel Sydney
+              </h3>
+            </div>
+            <div>
+              <span>
+                339 Pitt St, Sydney
+              </span>
+            </div>
+            <div
+              className="Accommodation-details-offer"
+            >
+              Deluxe King
+            </div>
+            <div
+              className="Accommodation-details-cancellation"
+            >
+              Free cancellation
+            </div>
+          </div>
+          <div
+            className="Accommodation-price"
+          >
+            <span
+              style={
+                Object {
+                  "fontSize": "small",
+                  "marginTop": "auto",
+                }
+              }
+            >
+              <b>
+                1
+              </b>
+               night total (
+              AUD
+              )
+            </span>
+            <div
+              style={
+                Object {
+                  "fontSize": "xx-large",
+                }
+              }
+            >
+              <sup
+                style={
+                  Object {
+                    "fontSize": "large",
+                  }
+                }
+              >
+                $
+              </sup>
+              375
+            </div>
+            <h3
+              style={
+                Object {
+                  "color": "red",
+                  "margin": 0,
+                }
+              }
+            >
+              Save $28
+              <sup>
+                ~
+              </sup>
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div
+        className="Accommodation"
+      >
+        <div
+          className="Accommodation-image"
+        >
+          <div
+            className="Accommodation-image-tag"
+          >
+            Red Hot
+          </div>
+          <img
+            alt="previewImage"
+            src="https://unsplash.it/145/125/?random&temp=xbtlihs45t"
+          />
+        </div>
+        <div
+          className="Accommodation-details-wrapper"
+        >
+          <div
+            className="Accommodation-details"
+          >
+            <div
+              className="Accommodation-details-title"
+            >
+              <h3>
+                Rydges World Square Sydney
+              </h3>
+            </div>
+            <div>
+              <span>
+                389 Pitt St, Sydney
+              </span>
+            </div>
+            <div
+              className="Accommodation-details-offer"
+            >
+              Deluxe King Room
+            </div>
+            <div
+              className="Accommodation-details-cancellation"
+            >
+              Not refundable
+            </div>
+          </div>
+          <div
+            className="Accommodation-price"
+          >
+            <span
+              style={
+                Object {
+                  "fontSize": "small",
+                  "marginTop": "auto",
+                }
+              }
+            >
+              <b>
+                1
+              </b>
+               night total (
+              AUD
+              )
+            </span>
+            <div
+              style={
+                Object {
+                  "fontSize": "xx-large",
+                }
+              }
+            >
+              <sup
+                style={
+                  Object {
+                    "fontSize": "large",
+                  }
+                }
+              >
+                $
+              </sup>
+              227
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="Accommodation"
+      >
+        <div
+          className="Accommodation-image"
+        >
+          <div
+            className="Accommodation-image-tag"
+          >
+            Exclusive Deal
+          </div>
+          <img
+            alt="previewImage"
+            src="https://unsplash.it/145/125/?random&temp=5lm8loqk1s"
+          />
+        </div>
+        <div
+          className="Accommodation-details-wrapper"
+        >
+          <div
+            className="Accommodation-details"
+          >
+            <div
+              className="Accommodation-details-title"
+            >
+              <h3>
+                PARKROYAL Darling Harbour Sydney
+              </h3>
+            </div>
+            <div>
+              <span>
+                150 Day Street, Sydney
+              </span>
+            </div>
+            <div
+              className="Accommodation-details-offer"
+            >
+              Deluxe King
+            </div>
+            <div
+              className="Accommodation-details-cancellation"
+            >
+              Free cancellation
+            </div>
+          </div>
+          <div
+            className="Accommodation-price"
+          >
+            <span
+              style={
+                Object {
+                  "fontSize": "small",
+                  "marginTop": "auto",
+                }
+              }
+            >
+              <b>
+                1
+              </b>
+               night total (
+              AUD
+              )
+            </span>
+            <div
+              style={
+                Object {
+                  "fontSize": "xx-large",
+                }
+              }
+            >
+              <sup
+                style={
+                  Object {
+                    "fontSize": "large",
+                  }
+                }
+              >
+                $
+              </sup>
+              535
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="Accommodation"
+      >
+        <div
+          className="Accommodation-image"
+        >
+          <div
+            className="Accommodation-image-tag"
+          >
+            Bonus Points
+          </div>
+          <img
+            alt="previewImage"
+            src="https://unsplash.it/145/125/?random&temp=kwjf8jlxg9"
+          />
+        </div>
+        <div
+          className="Accommodation-details-wrapper"
+        >
+          <div
+            className="Accommodation-details"
+          >
+            <div
+              className="Accommodation-details-title"
+            >
+              <h3>
+                Metro Hotel Marlow Sydney Central
+              </h3>
+            </div>
+            <div>
+              <span>
+                431-439 Pitt Street, Sydney
+              </span>
+            </div>
+            <div
+              className="Accommodation-details-offer"
+            >
+              Deluxe King
+            </div>
+            <div
+              className="Accommodation-details-cancellation"
+            >
+              Free cancellation
+            </div>
+          </div>
+          <div
+            className="Accommodation-price"
+          >
+            <span
+              style={
+                Object {
+                  "fontSize": "small",
+                  "marginTop": "auto",
+                }
+              }
+            >
+              <b>
+                1
+              </b>
+               night total (
+              AUD
+              )
+            </span>
+            <div
+              style={
+                Object {
+                  "fontSize": "xx-large",
+                }
+              }
+            >
+              <sup
+                style={
+                  Object {
+                    "fontSize": "large",
+                  }
+                }
+              >
+                $
+              </sup>
+              295
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -4,9 +4,13 @@ import data from "./App.props"
 import logo from '../logo.png'
 import AccommodationDetails from '../features/accommodation/details/AccommodationDetails'
 
-const App = () => {
+const App = (props) => {
     const [sortBy, setSortBy] = useState("high-low")
     const [accommodations, setAccommodations] = useState(data?.data?.results)
+
+    const {
+        excludeRatings = false
+    } = props
 
     useEffect(() => {
         if (Array.isArray(accommodations) && accommodations.length > 0) {
@@ -39,7 +43,7 @@ const App = () => {
                         </select>
                     </div>
                 </div>
-                <AccommodationDetails data={accommodations} />
+                <AccommodationDetails data={accommodations} excludeRatings={excludeRatings} />
             </div>
         </div>
     )
