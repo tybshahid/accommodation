@@ -10,6 +10,9 @@
 
 .Accommodation-image {
     display: flex;
+}
+
+.Accommodation-image img {
     width: 200px;
 }
 
@@ -30,12 +33,6 @@
     margin-left: 1rem;
 }
 
-@media only screen and (max-width: 850px) {
-    .Accommodation-details-wrapper {
-        flex-direction: column;
-    }
-}
-
 .Accommodation-details {
     flex-grow: 1;
     padding: 1rem;
@@ -46,13 +43,6 @@
 .Accommodation-details-title {
     display: flex;
     gap: 1rem;
-}
-
-@media only screen and (max-width: 850px) {
-    .Accommodation-details-title {
-        flex-direction: column;
-        gap: 0;
-    }
 }
 
 .Accommodation-details-title-icons {
@@ -67,12 +57,6 @@ div.Accommodation-details h3 {
     white-space: nowrap;
     overflow: hidden !important;
     text-overflow: ellipsis;
-}
-
-@media only screen and (max-width: 850px) {
-    div.Accommodation-details h3 {
-        max-width: 100px;
-    }
 }
 
 div.Accommodation-details span {
@@ -92,7 +76,7 @@ div.Accommodation-details span {
 .Accommodation-details-cancellation {
     font-size: small;
     color: #60ab6f;
-    margin-top: 2rem;
+    margin-top: auto;
     font-weight: 400;
 }
 
@@ -101,4 +85,35 @@ div.Accommodation-details span {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+}
+
+@media only screen and (max-width: 850px) {
+    .Accommodation-image img {
+        width: 145px;
+    }
+
+    .Accommodation-details-wrapper {
+        flex-direction: column;
+        margin-left: 0.5rem;
+    }
+
+    .Accommodation-details,
+    .Accommodation-price {
+        padding-bottom: 0;
+    }
+
+    .Accommodation-details-title {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .Accommodation-details-offer,
+    .Accommodation-details-cancellation {
+        margin-top: 0.2rem;
+    }
+
+    div.Accommodation-details h3 {
+        font-size: medium;
+        max-width: 150px;
+    }
 }
