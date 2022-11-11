@@ -21,9 +21,15 @@
     position: relative;
     flex-grow: 1;
     overflow-y: auto;
-    padding: 2rem 1rem;
+    padding: 0 1rem;
 }
 
 .App-features::-webkit-scrollbar {
     display: none;
+}
+
+.App-filters {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
 }

@@ -1,12 +1,7 @@
-import { useEffect } from "react"
 import './AccommodationDetails.css'
-import data from "./AccommodationDetails.props"
 import StarRatings from 'react-star-ratings'
 
-const AccommodationDetails = () => {
-    useEffect(() => {
-        console.log(data.data.results)
-    }, [])
+const AccommodationDetails = (props) => {
 
     const cancellationOptions = Object.freeze({
         FREE_CANCELLATION: "Free cancellation",
@@ -15,7 +10,7 @@ const AccommodationDetails = () => {
 
     return (
         <div className="Accommodations">
-            {data.data?.results?.map((item, index) => (
+            {props.data?.map((item, index) => (
                 <div key={item.id} className="Accommodation">
                     <div className="Accommodation-image">
                         <div className="Accommodation-image-tag">{item?.offer?.promotion?.title}</div>
