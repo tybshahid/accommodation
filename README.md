@@ -3,12 +3,12 @@
 A demo Application that shows list of hotels that can be sorted by price.
 
 ### Instructions to run the app
-- open terminal from client-app directory
+- Open terminal from client-app directory
 - npm install
 - npm start
 
 ### Instructions to run tests
-- open terminal from client-app directory
+- Open terminal from client-app directory
 - npm test
 
 ### Trade-offs
