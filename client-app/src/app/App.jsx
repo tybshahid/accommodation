@@ -14,10 +14,12 @@ const App = (props) => {
 
     useEffect(() => {
         if (Array.isArray(accommodations) && accommodations.length > 0) {
-            if (sortBy === "low-high")
-                setAccommodations(accommodations.sort((a, b) => b.offer?.displayPrice?.amount - a.offer?.displayPrice?.amount))
+            var currAccommodations = [...accommodations]
+
+            if (sortBy === "high-low")
+                setAccommodations(currAccommodations.sort((a, b) => b.offer?.displayPrice?.amount - a.offer?.displayPrice?.amount))
             else
-                setAccommodations(accommodations.sort((a, b) => a.offer?.displayPrice?.amount - b.offer?.displayPrice?.amount))
+                setAccommodations(currAccommodations.sort((a, b) => a.offer?.displayPrice?.amount - b.offer?.displayPrice?.amount))
         }
     }, [accommodations, sortBy])
 
