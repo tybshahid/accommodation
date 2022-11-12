@@ -85,7 +85,7 @@ exports[`App should render without throwing an error 1`] = `
           </div>
           <img
             alt="previewImage"
-            src="https://unsplash.it/145/125/?random&temp=cxd650nuyo"
+            src="https://unsplash.it/145/125/?random&temp=5lm8loqk1s"
           />
         </div>
         <div
@@ -98,23 +98,23 @@ exports[`App should render without throwing an error 1`] = `
               className="Accommodation-details-title"
             >
               <h3>
-                Courtyard by Marriott Sydney-North Ryde
+                PARKROYAL Darling Harbour Sydney
               </h3>
             </div>
             <div>
               <span>
-                7-11 Talavera Rd, North Ryde
+                150 Day Street, Sydney
               </span>
             </div>
             <div
               className="Accommodation-details-offer"
             >
-              Deluxe Balcony Room
+              Deluxe King
             </div>
             <div
               className="Accommodation-details-cancellation"
             >
-              Not refundable
+              Free cancellation
             </div>
           </div>
           <div
@@ -151,21 +151,8 @@ exports[`App should render without throwing an error 1`] = `
               >
                 $
               </sup>
-              329
+              535
             </div>
-            <h3
-              style={
-                Object {
-                  "color": "red",
-                  "margin": 0,
-                }
-              }
-            >
-              Save $30
-              <sup>
-                ~
-              </sup>
-            </h3>
           </div>
         </div>
       </div>
@@ -275,11 +262,11 @@ exports[`App should render without throwing an error 1`] = `
           <div
             className="Accommodation-image-tag"
           >
-            Red Hot
+            Exclusive Deal
           </div>
           <img
             alt="previewImage"
-            src="https://unsplash.it/145/125/?random&temp=xbtlihs45t"
+            src="https://unsplash.it/145/125/?random&temp=cxd650nuyo"
           />
         </div>
         <div
@@ -292,18 +279,18 @@ exports[`App should render without throwing an error 1`] = `
               className="Accommodation-details-title"
             >
               <h3>
-                Rydges World Square Sydney
+                Courtyard by Marriott Sydney-North Ryde
               </h3>
             </div>
             <div>
               <span>
-                389 Pitt St, Sydney
+                7-11 Talavera Rd, North Ryde
               </span>
             </div>
             <div
               className="Accommodation-details-offer"
             >
-              Deluxe King Room
+              Deluxe Balcony Room
             </div>
             <div
               className="Accommodation-details-cancellation"
@@ -345,92 +332,21 @@ exports[`App should render without throwing an error 1`] = `
               >
                 $
               </sup>
-              227
+              329
             </div>
-          </div>
-        </div>
-      </div>
-      <div
-        className="Accommodation"
-      >
-        <div
-          className="Accommodation-image"
-        >
-          <div
-            className="Accommodation-image-tag"
-          >
-            Exclusive Deal
-          </div>
-          <img
-            alt="previewImage"
-            src="https://unsplash.it/145/125/?random&temp=5lm8loqk1s"
-          />
-        </div>
-        <div
-          className="Accommodation-details-wrapper"
-        >
-          <div
-            className="Accommodation-details"
-          >
-            <div
-              className="Accommodation-details-title"
-            >
-              <h3>
-                PARKROYAL Darling Harbour Sydney
-              </h3>
-            </div>
-            <div>
-              <span>
-                150 Day Street, Sydney
-              </span>
-            </div>
-            <div
-              className="Accommodation-details-offer"
-            >
-              Deluxe King
-            </div>
-            <div
-              className="Accommodation-details-cancellation"
-            >
-              Free cancellation
-            </div>
-          </div>
-          <div
-            className="Accommodation-price"
-          >
-            <span
+            <h3
               style={
                 Object {
-                  "fontSize": "small",
-                  "marginTop": "auto",
+                  "color": "red",
+                  "margin": 0,
                 }
               }
             >
-              <b>
-                1
-              </b>
-               night total (
-              AUD
-              )
-            </span>
-            <div
-              style={
-                Object {
-                  "fontSize": "xx-large",
-                }
-              }
-            >
-              <sup
-                style={
-                  Object {
-                    "fontSize": "large",
-                  }
-                }
-              >
-                $
+              Save $30
+              <sup>
+                ~
               </sup>
-              535
-            </div>
+            </h3>
           </div>
         </div>
       </div>
@@ -514,6 +430,90 @@ exports[`App should render without throwing an error 1`] = `
                 $
               </sup>
               295
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="Accommodation"
+      >
+        <div
+          className="Accommodation-image"
+        >
+          <div
+            className="Accommodation-image-tag"
+          >
+            Red Hot
+          </div>
+          <img
+            alt="previewImage"
+            src="https://unsplash.it/145/125/?random&temp=xbtlihs45t"
+          />
+        </div>
+        <div
+          className="Accommodation-details-wrapper"
+        >
+          <div
+            className="Accommodation-details"
+          >
+            <div
+              className="Accommodation-details-title"
+            >
+              <h3>
+                Rydges World Square Sydney
+              </h3>
+            </div>
+            <div>
+              <span>
+                389 Pitt St, Sydney
+              </span>
+            </div>
+            <div
+              className="Accommodation-details-offer"
+            >
+              Deluxe King Room
+            </div>
+            <div
+              className="Accommodation-details-cancellation"
+            >
+              Not refundable
+            </div>
+          </div>
+          <div
+            className="Accommodation-price"
+          >
+            <span
+              style={
+                Object {
+                  "fontSize": "small",
+                  "marginTop": "auto",
+                }
+              }
+            >
+              <b>
+                1
+              </b>
+               night total (
+              AUD
+              )
+            </span>
+            <div
+              style={
+                Object {
+                  "fontSize": "xx-large",
+                }
+              }
+            >
+              <sup
+                style={
+                  Object {
+                    "fontSize": "large",
+                  }
+                }
+              >
+                $
+              </sup>
+              227
             </div>
           </div>
         </div>
