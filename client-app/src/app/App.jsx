@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import './App.css'
 import data from "./App.props"
 import logo from '../logo.png'
@@ -6,22 +6,11 @@ import AccommodationDetails from '../features/accommodation/details/Accommodatio
 
 const App = (props) => {
     const [sortBy, setSortBy] = useState("high-low")
-    const [accommodations, setAccommodations] = useState(data?.data?.results)
+    const accommodations = data?.data?.results && Array.isArray(data.data.results) ? data.data.results : []
 
     const {
         excludeRatings = false
     } = props
-
-    useEffect(() => {
-        if (Array.isArray(accommodations) && accommodations.length > 0) {
-            var currAccommodations = [...accommodations]
-
-            if (sortBy === "high-low")
-                setAccommodations(currAccommodations.sort((a, b) => b.offer?.displayPrice?.amount - a.offer?.displayPrice?.amount))
-            else
-                setAccommodations(currAccommodations.sort((a, b) => a.offer?.displayPrice?.amount - b.offer?.displayPrice?.amount))
-        }
-    }, [accommodations, sortBy])
 
     return (
         <div className="App">
@@ -45,7 +34,10 @@ const App = (props) => {
                         </select>
                     </div>
                 </div>
-                <AccommodationDetails data={accommodations} excludeRatings={excludeRatings} />
+                <AccommodationDetails
+                    data={sortBy === "high-low" ? accommodations.sort((a, b) => b.offer?.displayPrice?.amount - a.offer?.displayPrice?.amount) :
+                        accommodations.sort((a, b) => a.offer?.displayPrice?.amount - b.offer?.displayPrice?.amount)}
+                    excludeRatings={excludeRatings} />
             </div>
         </div>
     )
