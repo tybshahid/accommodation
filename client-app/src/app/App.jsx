@@ -31,7 +31,7 @@ const App = (props) => {
             <div className="App-features">
                 <div className="App-filters">
                     <div>
-                        <b>{accommodations.length}</b>&nbsp;
+                        <b>{accommodations?.length || 0}</b>&nbsp;
                         <span style={{ fontStyle: "italic" }}>hotels in <b>Sydney</b></span>
                     </div>
                     <div>
