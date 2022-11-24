@@ -1,8 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`AccommodationDetails should render without throwing an error 1`] = `
+exports[`Accommodation Details - Snapshot should render without throwing an error 1`] = `
 <div
   className="Accommodations"
+  data-testid="accommodation-details"
 >
   <div
     className="Accommodation"

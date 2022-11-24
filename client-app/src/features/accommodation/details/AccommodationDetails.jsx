@@ -4,6 +4,7 @@ import StarRatings from 'react-star-ratings'
 const AccommodationDetails = (props) => {
 
     const {
+        data = [],
         excludeRatings = false
     } = props
 
@@ -12,9 +13,12 @@ const AccommodationDetails = (props) => {
         NOT_REFUNDABLE: "Not refundable"
     })
 
+    if (Array.isArray(data) && data.length === 0)
+        return
+
     return (
-        <div className="Accommodations">
-            {props.data?.map((item, index) => (
+        <div data-testid="accommodation-details" className="Accommodations">
+            {data?.map((item, index) => (
                 <div key={item.id} className="Accommodation">
                     <div className="Accommodation-image">
                         <div className="Accommodation-image-tag">{item?.offer?.promotion?.title}</div>
