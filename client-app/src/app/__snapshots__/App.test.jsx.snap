@@ -57,14 +57,24 @@ exports[`App should render without throwing an error 1`] = `
           }
         >
           <option
-            value="high-low"
+            value="high-low-price"
           >
             Price (high-low)
           </option>
           <option
-            value="low-high"
+            value="low-high-price"
           >
             Price (low-high)
+          </option>
+          <option
+            value="high-low-rating"
+          >
+            Rating (high-low)
+          </option>
+          <option
+            value="low-high-rating"
+          >
+            Rating (low-high)
           </option>
         </select>
       </div>
