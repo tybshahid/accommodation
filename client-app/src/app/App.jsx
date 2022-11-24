@@ -5,12 +5,32 @@ import logo from '../logo.png'
 import AccommodationDetails from '../features/accommodation/details/AccommodationDetails'
 
 const App = (props) => {
-    const [sortBy, setSortBy] = useState("high-low")
-    const accommodations = data?.data?.results && Array.isArray(data.data.results) ? data.data.results : []
+    const [accommodations, setAccommodations] =
+        useState(data?.data?.results && Array.isArray(data.data.results) ?
+            data.data.results.sort((a, b) => b.offer.displayPrice.amount - a.offer.displayPrice.amount) : [])
 
     const {
         excludeRatings = false
     } = props
+
+    const handleSorting = e => {
+        switch (e.target.value) {
+            case "high-low-price":
+                setAccommodations([...accommodations].sort((a, b) => b.offer.displayPrice.amount - a.offer.displayPrice.amount))
+                break
+            case "low-high-price":
+                setAccommodations([...accommodations].sort((a, b) => a.offer.displayPrice.amount - b.offer.displayPrice.amount))
+                break
+            case "high-low-rating":
+                setAccommodations([...accommodations].sort((a, b) => b.property.rating.ratingValue - a.property.rating.ratingValue))
+                break
+            case "low-high-rating":
+                setAccommodations([...accommodations].sort((a, b) => a.property.rating.ratingValue - b.property.rating.ratingValue))
+                break
+            default:
+                break
+        }
+    }
 
     return (
         <div className="App">
@@ -27,16 +47,17 @@ const App = (props) => {
                         <span style={{ fontWeight: "bold" }}>Sort by</span>&nbsp;&nbsp;
                         <select
                             style={{ padding: "0 0.5rem" }}
-                            onChange={(e) => setSortBy(e.target.value)}
+                            onChange={handleSorting}
                         >
-                            <option value={"high-low"}>Price (high-low)</option>
-                            <option value={"low-high"}>Price (low-high)</option>
+                            <option value={"high-low-price"}>Price (high-low)</option>
+                            <option value={"low-high-price"}>Price (low-high)</option>
+                            <option value={"high-low-rating"}>Rating (high-low)</option>
+                            <option value={"low-high-rating"}>Rating (low-high)</option>
                         </select>
                     </div>
                 </div>
                 <AccommodationDetails
-                    data={sortBy === "high-low" ? accommodations.sort((a, b) => b.offer?.displayPrice?.amount - a.offer?.displayPrice?.amount) :
-                        accommodations.sort((a, b) => a.offer?.displayPrice?.amount - b.offer?.displayPrice?.amount)}
+                    data={accommodations}
                     excludeRatings={excludeRatings} />
             </div>
         </div>
